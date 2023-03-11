@@ -1,0 +1,16 @@
+.cart{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 70%;
+}
+
+.productsOnCart{
+    font-size: 50%;
+}
