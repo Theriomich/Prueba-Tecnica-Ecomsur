@@ -1,19 +1,17 @@
 import React from "react";
 import "./Cart.css";
-import { useContext } from "react";
-import { CartContext } from "./auth-context";
 
 const Cart = ({ cart }) => {
   return (
     <div className="cart">
       <h2>Carrito de compras</h2>
-      <ul>
+      <div>
         {cart.map((product) => (
-          <div clasName="productsOnCart" key={product.id}>
+          <div key={product.id}>
             {product.name} - {product.price}$
           </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };

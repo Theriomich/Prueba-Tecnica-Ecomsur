@@ -100,7 +100,10 @@
        
    }
 
-
+   .buttonCart:disabled {
+    background-color: rgb(145, 142, 142);
+    color: white;
+  }
 
 
 

@@ -10,4 +10,6 @@ En el componente Header muestro el icono del carro y alli es donde aparece el co
 
 En la pagina de Cart renderice el carrito
 
-use UseState para actualizar los estados y para que los productos se pudiecen ver al cliquear el boton
+use UseState y Context para actualizar los estados y para que los productos se pudiecen ver al cliquear el boton
+
+Para correr y ver la aplicacion correrla con npm run dev

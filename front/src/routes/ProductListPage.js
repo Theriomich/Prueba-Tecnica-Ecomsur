@@ -49,7 +49,7 @@ function Products() {
       }
     });
 
-    setNumProducts((prevNum) => prevNum + 1);
+    setNumProducts((prevNum) => prevNum + productToAdd.index);
   };
 
   return (
@@ -66,7 +66,7 @@ function Products() {
               />
             </figure>
             <button className="detailsButton">
-              <Link to="/details">Detalles</Link>{" "}
+              <Link to={`/details/${product._id}`}>Detalles</Link>
             </button>
 
             <div className="info-product">
@@ -76,8 +76,9 @@ function Products() {
             <button
               onClick={() => addToCart(product._id)}
               className="buttonCart"
+              disabled={product.countInStock === 0}
             >
-              Add To Cart
+              {product.countInStock === 0 ? "Agotado" : "Add To Cart"}
             </button>
           </div>
         ))}

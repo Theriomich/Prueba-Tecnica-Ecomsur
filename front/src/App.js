@@ -33,7 +33,7 @@ const App = () => {
         />
       ),
     },
-    { path: "/details", element: <Details /> },
+    { path: "/details/:_id", element: <Details /> },
   ]);
 
   return (
